@@ -1,0 +1,92 @@
+#Prénom|Nom: Ted|KOUHOUENOU
+#Nom de Code:jekyll
+#Num:+229 97325663
+
+#~Feature-Ted/Courses-Git1
+
+1-Un cours sur GIT
+
+*GIT INSTALLATION:sudo apt install git
+
+*GIT CONFIGURATION(WITH git config):
+
+Le fichier de git (gitconfig se trouve dans trois repertoire différents au cas ou l'un d'eux serai supprimé au hasard)
+|- /etc/gitconfig et se modifie via la commande `git config --system`
+||- ~/.gitconfig  et se modifie via la commande `git config --global`
+|||- .git/gitconfig  et se modifie via la commande `git config `
+
+
+Exemple de configuration:
+
+git config --global
+git config  --global user.name "your_strange_name"
+git config --global user.email bombaclat@gmail.com
+git config --global core.editor emacs
+
+git config --list
+
+
+*GESTION DES FICHIERS
+
+-Pour initialiser un depo
+git init
+
+-Pour ajouter un fichier au repo
+git add file_name
+
+-Pour verifier le status
+git status
+
+-Pour faire un snapshot (for the versionning files) 
+git commit --message "your circonstance message"
+
+Faire un commit a chaque fois qu'un des fichier du repo a ete modifié
+
+-Lister tout les commit du repo
+git log
+-Verifier si la difference entre le fichier  actuel et ceux d'avant les differents commits
+git diff
+
+
+*GESTION DES BRANCHES
+Les branches sont des sortes d'autres bulles ou l'on peut travailler sur un fichier sans qui.'il ne soit modifier dans la branche de depart
+une sorte de monde alternatifs ,une autre dimension
+Par defaut la branche de depart et 'master'
+
+
+Info:Lorsqu'un fichier est modifié dans une branche ellereste intact dans les autres branches
+a moins qu'on les fusionne
+
+-Pour creer une branche 
+git branch name_branch
+-Pour voir les branchrs dispo
+git branch
+
+-Pour basculer sur une autre branche
+git checkout name_branch
+
+-Pour fusionner deux branche (la fusion se fait entre la branche dans laquelle on se trouve et celle selectionner)
+git merge name_branch
+
+-Pour faire la differenre entre les fichiers de branches differentes (marche pour quand nous avons deux branches)
+git diff
+
+-Pour la difference entre deux branches que l'on veux selectionnés
+git diff branch_1..branch_2
+
+-Pour supprimés une branche
+git branch -d name_branch
+
+-Pour supprimés une branche de force
+git branch -D name_branch
+
+
+
+
+
+
+
+
+
+
+
